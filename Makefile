@@ -6,7 +6,7 @@
 #    By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 20:58:51 by ohaker            #+#    #+#              #
-#    Updated: 2024/11/23 15:34:41 by ohaker           ###   ########.fr        #
+#    Updated: 2024/12/01 18:03:11 by ohaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -102,8 +102,8 @@ franci:
 
 mygit:
 	@bash -c ' \
-	cd ../../GitHub && \
-	cp -ru ~/Projects/libft ~/GitHub && \
+	cd ../../GitHub/libft && \
+	cp -ru ~/Projects/libft/ ~/GitHub/libft/ && \
 	git add . && \
 	git status && \
 	read -p "Commitment message: " input; \
