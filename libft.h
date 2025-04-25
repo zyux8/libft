@@ -6,7 +6,7 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:23:28 by ohaker            #+#    #+#             */
-/*   Updated: 2024/11/23 15:34:53 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/04/25 15:46:36 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	*ft_bzero(void *s, unsigned long c);
 void	*ft_calloc(size_t num, size_t size);
 int		ft_chrnbr(char *str, char c);
 int		ft_count_words(const char *str, char c);
+void	ft_free_split(char **split);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isalpha(int c);
