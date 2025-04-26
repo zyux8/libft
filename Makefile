@@ -6,7 +6,7 @@
 #    By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 20:58:51 by ohaker            #+#    #+#              #
-#    Updated: 2025/04/25 15:58:10 by ohaker           ###   ########.fr        #
+#    Updated: 2025/04/26 21:33:57 by ohaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,8 @@ SRC = \
 	ft_bzero.c \
 	ft_calloc.c \
 	ft_chrnbr.c \
+	ft_conv_to_neg.c \
+	ft_conv_to_pos.c \
 	ft_count_words.c \
 	ft_free_split.c \
 	ft_intlen.c \
@@ -76,14 +78,21 @@ SRC = \
 
 OBJ = $(SRC:.c=.o)
 
+NONE		= \033[0m
+GREEN		= \033[32;01m
+RED			= \033[31;01m
+ORANGE		= \033[33;01m
+# Color definitions for terminal output
+
 all:	$(NAME)
 
 $(NAME): $(OBJ)
+	@echo "$(ORANGE)		- Compiling $(NAME)...$(NONE)"
 	@ar rc $(NAME) $(OBJ)
+	@echo "$(GREEN)		- $(NAME) Compiled -$(NONE)"
 
 %.o: %.c
 	@cc $(CFLAGS) -c $< -o $@
-# Without these nothing would compile with the given cflags.
 
 clean:
 	@rm -f $(OBJ)
@@ -101,13 +110,11 @@ franci:
 # alias paco="$HOME"/francinette/tester.sh
 
 mygit:
-	@bash -c ' \
-	cd ../../GitHub/libft && \
-	cp -ru ~/Projects/libft/ ~/GitHub/libft/ && \
-	git add . && \
-	git status && \
-	read -p "Commitment message: " input; \
-	git commit -m "$$input" && \
-	git push origin main'
+	@git add .
+	@git commit -m "update"
+	@git push origin main
+	@echo "$(GREEN)		- Pushed to git$(NONE)"
 # Command to copy all changed files into another directory
 # so it can be pushed into my GitHub.
+
+.PHONY: all clean fclean re franci mygit
