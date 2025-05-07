@@ -6,7 +6,7 @@
 #    By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 20:58:51 by ohaker            #+#    #+#              #
-#    Updated: 2025/04/26 21:33:57 by ohaker           ###   ########.fr        #
+#    Updated: 2025/04/28 21:39:47 by ohaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRC = \
 	ft_conv_to_neg.c \
 	ft_conv_to_pos.c \
 	ft_count_words.c \
+	ft_error.c \
 	ft_free_split.c \
 	ft_intlen.c \
 	ft_isalnum.c \
@@ -87,9 +88,9 @@ ORANGE		= \033[33;01m
 all:	$(NAME)
 
 $(NAME): $(OBJ)
-	@echo "$(ORANGE)		- Compiling $(NAME)...$(NONE)"
+	@echo "$(ORANGE)		- Creating $(NAME)...$(NONE)"
 	@ar rc $(NAME) $(OBJ)
-	@echo "$(GREEN)		- $(NAME) Compiled -$(NONE)"
+	@echo "$(GREEN)		- $(NAME) Created -$(NONE)"
 
 %.o: %.c
 	@cc $(CFLAGS) -c $< -o $@
@@ -111,9 +112,14 @@ franci:
 
 mygit:
 	@git add .
-	@git commit -m "update"
+	@git status
+	@echo "$(ORANGE)		- Waiting for commit message...$(NONE)"
+	@echo "Enter commit message:"; \
+	read input; \
+	git commit -m "$$input"
 	@git push origin main
 	@echo "$(GREEN)		- Pushed to git$(NONE)"
+
 # Command to copy all changed files into another directory
 # so it can be pushed into my GitHub.
 
