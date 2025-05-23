@@ -36,6 +36,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/* Returns a pointer to the first character of the string 
+/* Returns a pointer to the first character of the string
 	little in the string big, when the string little is inside
 	the set limiter 'len'. */

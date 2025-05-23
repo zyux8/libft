@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_conv_to_pos(int x)
+int	ft_conv_to_pos(int x)
 {
 	if (x < 0)
 		x = -x;
 	return (x);
 }
-//Converts positive numbers to negative
+// Converts positive numbers to negative

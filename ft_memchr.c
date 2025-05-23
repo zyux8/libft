@@ -26,5 +26,5 @@ const void	*ft_memchr(const void *str, int c, unsigned long n)
 	return (0);
 }
 /* Searches the input string, to position 'n',
-	for the first occurance of the character and returns 
+	for the first occurance of the character and returns
 	a pointer to that character. */

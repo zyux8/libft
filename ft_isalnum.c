@@ -19,5 +19,5 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-/* Checks if the given parameter is wether 
+/* Checks if the given parameter is wether
 	a number or apart from the alphabet. */

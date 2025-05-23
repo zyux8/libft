@@ -16,5 +16,5 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-/* Checks if the given character is in lowercase 
+/* Checks if the given character is in lowercase
 	and if not it put the character to lowercase */

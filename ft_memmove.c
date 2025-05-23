@@ -14,7 +14,7 @@
 
 void	ft_replace(char *pdest, const char *psrc, unsigned long n)
 {
-	int			x;
+	int	x;
 
 	if (pdest > psrc)
 	{
