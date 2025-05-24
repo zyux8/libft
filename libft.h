@@ -6,7 +6,7 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:23:28 by ohaker            #+#    #+#             */
-/*   Updated: 2025/04/28 21:39:21 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/05/24 19:44:55 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ typedef struct s_list
 }					t_list;
 
 int					ft_atoi(const char *str);
+long				ft_atol(const char *str);
 void				*ft_bzero(void *s, unsigned long c);
 void				*ft_calloc(size_t num, size_t size);
 int					ft_chrnbr(char *str, char c);
