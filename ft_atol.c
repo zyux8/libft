@@ -6,14 +6,14 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 19:42:26 by ohaker            #+#    #+#             */
-/*   Updated: 2025/05/24 19:45:03 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/09/11 01:46:52 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 long	ft_atoi(const char *str)
 {
-	int	x;
-	int	neg;
+	int		x;
+	int		neg;
 	long	res;
 
 	x = 0;
