@@ -1,40 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atol.c                                          :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/24 19:42:26 by ohaker            #+#    #+#             */
-/*   Updated: 2025/09/23 19:49:35 by ohaker           ###   ########.fr       */
+/*   Created: 2025/09/15 18:39:35 by ohaker            #+#    #+#             */
+/*   Updated: 2025/09/15 20:23:39 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long	ft_atol(const char *str)
+int	ft_isspace(int c)
 {
-	int		x;
-	int		neg;
-	long	res;
-
-	x = 0;
-	neg = 1;
-	res = 0;
-	while (str[x] == ' ' || (str[x] >= 9 && str[x] <= 13))
-		x++;
-	if (str[x] == '-')
-	{
-		neg = -1;
-		x++;
-	}
-	else if (str[x] == '+')
-		x++;
-	while (ft_isdigit(str[x]))
-	{
-		res = (res * 10) + (str[x] - '0');
-		x++;
-	}
-	return (res * neg);
+	if (c == ' ' || c == '\t' || c == '\n'
+		|| c == '\v' || c == '\f' || c == '\r')
+		return (1);
+	return (0);
 }
-/* Converts a portion of the input given string into long. */

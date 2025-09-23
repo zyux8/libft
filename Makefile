@@ -6,7 +6,7 @@
 #    By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 20:58:51 by ohaker            #+#    #+#              #
-#    Updated: 2025/05/24 19:44:43 by ohaker           ###   ########.fr        #
+#    Updated: 2025/09/23 19:51:41 by ohaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRC = \
 	ft_isascii.c \
 	ft_isdigit.c \
 	ft_isprint.c \
+	ft_isspace.c \
 	ft_itoa.c \
 	ft_lstadd_back.c \
 	ft_lstadd_front.c \
