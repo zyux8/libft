@@ -6,7 +6,7 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:23:28 by ohaker            #+#    #+#             */
-/*   Updated: 2025/09/23 19:49:46 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/10/26 01:07:19 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ char				*ft_strdup(const char *s);
 void				ft_striteri(char *str, void (*f)(unsigned int, char *));
 char				*ft_strjoin(const char *str1, const char *str2);
 size_t				ft_strlcat(char *dest, const char *src, size_t n);
+int					ft_strcmp(char *s1, char *s2);
 int					ft_strlcpy(char *dest, const char *src, unsigned long n);
 int					ft_strlen(const char *str);
 char				*ft_strmapi(char const *str, char (*f)(unsigned int, char));

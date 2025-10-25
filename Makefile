@@ -6,7 +6,7 @@
 #    By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 20:58:51 by ohaker            #+#    #+#              #
-#    Updated: 2025/09/23 19:51:41 by ohaker           ###   ########.fr        #
+#    Updated: 2025/10/26 01:09:05 by ohaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,6 +60,7 @@ SRC = \
 	ft_putstr_fd.c \
 	ft_split.c \
 	ft_strchr.c \
+	ft_strcmp.c \
 	ft_strcpy.c \
 	ft_strdup.c \
 	ft_striteri.c \
