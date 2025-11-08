@@ -6,13 +6,14 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:23:28 by ohaker            #+#    #+#             */
-/*   Updated: 2025/11/06 15:06:00 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/11/08 20:41:32 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #if !defined(LIBFT_H)
 # define LIBFT_H
 # include <limits.h>
+# include <stdarg.h>
 # include <stddef.h>
 # include <stdio.h>
 # include <stdlib.h>
@@ -72,6 +73,7 @@ char				*ft_strchr(const char *str, int c);
 char				*ft_strcpy(char *dest, const char *src);
 char				*ft_strdup(const char *s);
 void				ft_striteri(char *str, void (*f)(unsigned int, char *));
+char				*ft_strjoin_multi(const char *first, ...);
 char				*ft_strjoin(const char *str1, const char *str2);
 size_t				ft_strlcat(char *dest, const char *src, size_t n);
 int					ft_strcmp(char *s1, char *s2);
@@ -80,6 +82,8 @@ int					ft_strlen(const char *str);
 char				*ft_strmapi(char const *str, char (*f)(unsigned int, char));
 int					ft_strncmp(const char *str1, const char *str2, size_t n);
 char				*ft_strncpy(char *dst, const char *src, size_t n);
+char				*ft_strndup(const char *s,
+						long unsigned int amount_of_chars);
 char				*ft_strnstr(const char *big, const char *little,
 						size_t len);
 char				*ft_strrchr(const char *str, int c);

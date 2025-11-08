@@ -6,7 +6,7 @@
 #    By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 20:58:51 by ohaker            #+#    #+#              #
-#    Updated: 2025/11/06 15:06:39 by ohaker           ###   ########.fr        #
+#    Updated: 2025/11/08 20:41:59 by ohaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,6 +67,7 @@ SRC = \
 	ft_strcpy.c \
 	ft_strdup.c \
 	ft_striteri.c \
+	ft_strjoin_multi.c \
 	ft_strjoin.c \
 	ft_strlcat.c \
 	ft_strlcpy.c \
@@ -74,6 +75,7 @@ SRC = \
 	ft_strmapi.c \
 	ft_strncmp.c \
 	ft_strncpy.c \
+	ft_strndup.c \
 	ft_strnstr.c \
 	ft_strrev.c \
 	ft_strrchr.c \
