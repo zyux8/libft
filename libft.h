@@ -6,7 +6,7 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:23:28 by ohaker            #+#    #+#             */
-/*   Updated: 2025/10/26 01:07:19 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/11/06 15:06:00 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,10 @@ int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
+int					ft_isint(char *s);
 int					ft_isprint(int c);
 int					ft_isspace(int c);
+int					ft_isuppercase(char c);
 char				*ft_itoa(int n);
 void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstadd_front(t_list **lst, t_list *new);
@@ -64,6 +66,7 @@ void				ft_putnbr_fd(int n, int fd);
 void				ft_putnbr(int n);
 void				ft_putstr_fd(char *str, int fd);
 void				ft_putstr(char *str);
+void				*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 char				**ft_split(char const *str, char c);
 char				*ft_strchr(const char *str, int c);
 char				*ft_strcpy(char *dest, const char *src);
