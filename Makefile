@@ -6,13 +6,14 @@
 #    By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 20:58:51 by ohaker            #+#    #+#              #
-#    Updated: 2025/11/08 20:41:59 by ohaker           ###   ########.fr        #
+#    Updated: 2025/11/11 15:08:55 by ohaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror # Flags used for compiling the .c files.
 SRC = \
+	ft_append_str.c \
 	ft_atoi.c \
 	ft_atol.c \
 	ft_bzero.c \
