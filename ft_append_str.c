@@ -6,32 +6,35 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 15:07:38 by ohaker            #+#    #+#             */
-/*   Updated: 2025/11/11 15:11:11 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/11/18 00:11:04 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_append_str(char *dest, char *src)
+char	*ft_append_str(char *dest, char *src)
 {
-    size_t  dest_len;
-    size_t  src_len;
-    char    *old_dest;
-    char    *res;
+	char	*new_str;
+	size_t	len1;
+	size_t	len2;
 
-    if (!dest && !src)
-        return (NULL);
-    if (!dest)
-        return (ft_strdup(src));
-    dest_len = ft_strlen(dest);
-    src_len = ft_strlen(src);
-    old_dest = dest;
-    res = (char *)malloc(sizeof(char) * (dest_len + src_len + 1));
-    if (!res)
-        return (NULL);
-    ft_memcpy(res, dest, dest_len);
-    ft_memcpy(res + dest_len, src, src_len + 1); 
-    free(old_dest);
-    return (res);
+	if (src == NULL)
+	{
+		if (dest == NULL)
+			return (NULL);
+		return (strdup(dest));
+	}
+	len1 = 0;
+	if (dest != NULL)
+		len1 = strlen(dest);
+	len2 = strlen(src);
+	new_str = malloc(len1 + len2 + 1);
+	if (new_str == NULL)
+		return (NULL);
+	if (dest != NULL)
+		memcpy(new_str, dest, len1);
+	memcpy(new_str + len1, src, len2);
+	new_str[len1 + len2] = '\0';
+	return (new_str);
 }
-//appends the string src onto dest
+// appends the string src onto dest

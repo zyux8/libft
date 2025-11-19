@@ -6,7 +6,7 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:33:18 by ohaker            #+#    #+#             */
-/*   Updated: 2024/11/23 16:26:27 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/11/18 13:41:12 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,4 @@ char	*ft_strmapi(char const *str, char (*f)(unsigned int, char))
 	return (nstr);
 }
 /* Applies the given function 'f' on each character of the string 'str'
-	and returns a new string of the modified characters. */
+	and returns a new string of the modified characters. */e

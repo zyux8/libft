@@ -6,7 +6,7 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:23:28 by ohaker            #+#    #+#             */
-/*   Updated: 2025/11/12 19:05:54 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/11/18 15:33:06 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int					ft_conv_to_pos(int x);
 int					ft_count_words(const char *str, char c);
 void				error(char *error_msg);
 void				ft_free_split(char **split);
+int					ft_intlen(int n);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isalpha(int c);
