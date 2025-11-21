@@ -6,7 +6,7 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 19:42:26 by ohaker            #+#    #+#             */
-/*   Updated: 2025/11/12 19:05:38 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/11/21 22:43:51 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 long long	ft_atol(const char *str)
 {
-	int		x;
-	int		neg;
+	int			x;
+	int			neg;
 	long long	res;
 
 	x = 0;
