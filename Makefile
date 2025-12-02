@@ -6,7 +6,7 @@
 #    By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 20:58:51 by ohaker            #+#    #+#              #
-#    Updated: 2025/11/11 15:08:55 by ohaker           ###   ########.fr        #
+#    Updated: 2025/12/02 19:43:11 by ohaker           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,7 +83,16 @@ SRC = \
 	ft_strtrim.c \
 	ft_substr.c \
 	ft_tolower.c \
-	ft_toupper.c
+	ft_toupper.c \
+	ft_striteri.c \
+	ft_putchar_fd.c \
+	ft_putchar.c \
+	ft_putstr_fd.c \
+	ft_putstr.c \
+	ft_putendl_fd.c \
+	ft_putnbr_fd.c \
+	ft_putnbr.c  \
+	get_next_line.c
 # All files that are supposed to be used in this Makefile.
 
 OBJ = $(SRC:.c=.o)
