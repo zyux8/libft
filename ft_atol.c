@@ -6,17 +6,17 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 19:42:26 by ohaker            #+#    #+#             */
-/*   Updated: 2025/11/21 22:43:51 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/12/02 20:23:50 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long long	ft_atol(const char *str)
+long	ft_atol(const char *str)
 {
-	int			x;
-	int			neg;
-	long long	res;
+	int		x;
+	int		neg;
+	long	res;
 
 	x = 0;
 	neg = 1;

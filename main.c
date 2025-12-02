@@ -6,7 +6,7 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 17:35:19 by ohaker            #+#    #+#             */
-/*   Updated: 2024/12/01 17:46:09 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/12/02 20:24:02 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,20 @@
 // // int main(void)
 // // {
 // 	printf("%i", ft_printf("das ist ein %i", 50));
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	int		fd;
+// 	char	*line;
+
+// 	fd = open("test.txt", O_RDONLY);
+// 	while ((line = get_next_line(fd)) != NULL)
+// 	{
+// 		printf("Line: %s", line);
+// 		free(line);
+// 	}
+// 	close(fd);
 // 	return (0);
 // }
