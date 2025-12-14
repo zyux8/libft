@@ -6,44 +6,11 @@
 /*   By: ohaker <ohaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 16:31:04 by ohaker            #+#    #+#             */
-/*   Updated: 2025/12/02 20:21:21 by ohaker           ###   ########.fr       */
+/*   Updated: 2025/12/14 22:49:27 by ohaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// char	*ft_read_line(int fd)
-// {
-// 	char	*buffer;
-// 	char	*result;
-// 	int		bytes_read;
-// 	char	*tmp;
-
-// 	result = malloc(1);
-// 	if (!result)
-// 		return (NULL);
-// 	result[0] = '\0';
-// 	buffer = malloc(BUFFER_SIZE + 1);
-// 	if (!buffer)
-// 		return (free(result), NULL);
-// 	while (1)
-// 	{
-// 		bytes_read = read(fd, buffer, BUFFER_SIZE);
-// 		if (bytes_read < 0)
-// 			return (free(result), free(buffer), NULL);
-// 		if (bytes_read == 0)
-// 			break ;
-// 		buffer[bytes_read] = '\0';
-// 		tmp = ft_strjoin(result, buffer);
-// 		free(result);
-// 		result = tmp;
-// 		if (!result)
-// 			return (free(buffer), NULL);
-// 		if (ft_strchr(buffer, '\n'))
-// 			break ;
-// 	}
-// 	return (free(buffer), result);
-// }
 
 static char	*ft_read_to_str(int fd, char *result, char *buffer)
 {
